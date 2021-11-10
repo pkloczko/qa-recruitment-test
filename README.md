@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+# QA Recruitment Test
+This exercise will check your skills related to automated testing and generic experience in software development.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Before you start
+- Fork this repository, it needs to stay on GitHub, publicly available.
+- Install Node.js in the current LTS version.
+- We are not answering any questions about this test. Everyone work with the same set of information, to let us fairly judge your work.
 
-## Recommended IDE Setup
+## Setup
+Install the project dependencies using `npm install` and then start the app with `npm run dev`.
+On [localhost:3000](http://localhost:3000) you will see an app for exercising writing scripts calculating quadratic equation.
+The app is not fully functional, and we don't want you to change that state, so take what you get as a snapshot, showing just a small part of the whole project, in one state.
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## Task
+We want you to cover this app with tests, it's up to you to pick the right type, scope and number of them.
+Use Cypress and commit all related code to the repository.
