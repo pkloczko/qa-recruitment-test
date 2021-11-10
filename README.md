@@ -3,8 +3,8 @@ This exercise will check your skills related to automated testing and generic ex
 
 ## Before you start
 - Fork this repository, it needs to stay on GitHub, publicly available.
-- Install Node.js in the current LTS version.
 - We are not answering any questions about this test. Everyone work with the same set of information, to let us fairly judge your work.
+- You will need a Node.js installed in the current LTS version.
 
 ## Setup
 Install the project dependencies using `npm install` and then start the app with `npm run dev`.
