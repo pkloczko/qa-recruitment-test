@@ -8,7 +8,9 @@ This exercise will check your skills related to automated testing and generic ex
 
 ## Setup
 Install the project dependencies using `npm install` and then start the app with `npm run dev`.
+
 On [localhost:3000](http://localhost:3000) you will see an app for exercising writing scripts calculating quadratic equation.
+
 The app is not fully functional, and we don't want you to change that state, so take what you get as a snapshot, showing just a small part of the whole project, in one state.
 
 ## Task
