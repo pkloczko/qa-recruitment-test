@@ -15,4 +15,5 @@ The app is not fully functional, and we don't want you to change that state, so 
 
 ## Task
 We want you to cover this app with tests, it's up to you to pick the right type, scope and number of them.
-Use Cypress and commit all related code to the repository.
+
+As a testing framework use Cypress and commit all related code to the repository.
