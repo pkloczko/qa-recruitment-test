@@ -4,10 +4,10 @@ This exercise will check your skills related to automated testing and generic ex
 ## Before you start
 - Fork this repository, it needs to stay on GitHub, publicly available.
 - We are not answering any questions about this test. Everyone work with the same set of information, to let us fairly judge your work.
-- You will need a Node.js installed in the current LTS version.
+- You will need a Node.js installed in the current LTS version (if you don't know where to start, use [Volta](https://volta.sh/)).
 
 ## Setup
-Install the project dependencies using `npm install` and then start the app with `npm run dev`.
+Clone repo locally and then install the project dependencies using `npm install` and then start the app with `npm run dev`.
 
 On [localhost:3000](http://localhost:3000) you will see an app for exercising writing scripts calculating quadratic equation.
 
