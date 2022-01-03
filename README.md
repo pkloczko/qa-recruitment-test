@@ -7,13 +7,12 @@ This exercise will check your skills related to automated testing and generic ex
 - You will need a Node.js installed in the current LTS version (if you don't know where to start, use [Volta](https://volta.sh/)).
 
 ## Setup
-Clone repo locally and then install the project dependencies using `npm install` and then start the app with `npm run dev`.
+Clone repo locally and then install the project dependencies using `npm install` and then start the app with `npm run cypress`.
 
-On [localhost:3000](http://localhost:3000) you will see an app for exercising writing scripts calculating quadratic equation.
-
-The app is not fully functional, and we don't want you to change that state, so take what you get as a snapshot, showing just a small part of the whole project, in one state.
+It will open Cypress and generate some sample tests and config file.
 
 ## Task
-We want you to cover this app with tests, it's up to you to pick the right type, scope and number of them.
+We want you to cover the process of adding products to the cart on https://alpaca-community.snowdog.dev/
+Don't make orders, keep things simple, let's assume that you have a budget of up to 4 hours to handle that.
 
-As a testing framework use Cypress and commit all related code to the repository.
+Remember to commit all related code to the repository.
