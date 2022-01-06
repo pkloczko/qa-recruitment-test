@@ -1,0 +1,12 @@
+{
+	"products": [
+		{
+			"name": "Erika Running Short",
+			"price": "$45.00"
+		},
+		{
+			"name": "Ina Compression Short",
+			"price": "$49.00"
+		}
+	]
+}
