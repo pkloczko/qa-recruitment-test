@@ -3,7 +3,9 @@ import cat from '../../support/locators/categories.js';
 import MainPage from '../../support/pages/MainPage.js';
 import MiniCardPage from '../../support/pages/MiniCardPage.js';
 
-describe('Basic shopping card tests', () => {
+//to do: https://docs.cypress.io/api/commands/viewport#Dynamically-test-multiple-viewports
+
+describe('Basic shopping card iphone-8 tests', () => {
 
     let productDetails;
 
@@ -11,7 +13,8 @@ describe('Basic shopping card tests', () => {
         cy.fixture("productdata").then((data) => {
             productDetails = data;
         });
-        cy.viewport(1024, 768)
+        Cypress.config('defaultCommandTimeout', 10000);
+        cy.viewport('iphone-8')
     });
 
     it('Should verify if shopping card is empty', () => {
@@ -29,7 +32,7 @@ describe('Basic shopping card tests', () => {
         const mainPage = new MainPage()
         mainPage.openAlpacaWebSite()
         mainPage.clickShopByCategory(cat.clothing)
-        const productPage = mainPage.clickProductbyName(productDetails.products[0].name)
+        const productPage = mainPage.clickProductByName(productDetails.products[0].name)
         productPage.setProductSize()
         productPage.setProductColor()
         productPage.clickAddToCardButton();
@@ -49,13 +52,13 @@ describe('Basic shopping card tests', () => {
         const mainPage = new MainPage()
         mainPage.openAlpacaWebSite()
         mainPage.clickShopByCategory(cat.clothing)
-        const productPage = mainPage.clickProductbyName(productDetails.products[0].name)
+        const productPage = mainPage.clickProductByName(productDetails.products[0].name)
         productPage.setProductSize()
         productPage.setProductColor()
         productPage.clickAddToCardButton();
         productPage.getMessage().invoke("text").should("contain", "You added " + productDetails.products[0].name + " to your shopping cart.");
         mainPage.clickMainLogo()
-        mainPage.clickProductbyName(productDetails.products[1].name)
+        mainPage.clickProductByName(productDetails.products[1].name)
         productPage.setProductSize()
         productPage.setProductColor()
         productPage.clickAddToCardButton();

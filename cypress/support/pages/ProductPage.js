@@ -11,7 +11,7 @@ class ProductPage {
     }
 
     clickAddToCardButton() {
-        cy.get('#product-addtocart-button').click()
+        cy.get('#product-addtocart-button').click({ force: true })
     }
 
     getMessage() {

@@ -42,17 +42,19 @@ class ShoppingCartPage {
 
     calculateTotalOrderValue() {
         var arr = [];
-        var sum = 0;
 
-        return cy.get('[class="cart-list-item__total"]')
+        cy.get('[class="cart-list-item__total"]')
             .each(($el) => {
                 let number = parseFloat($el.text().trim().replace('$', ''));
                 arr.push(number)              
             }).then(() => {
+                var sum = 0
                 for (let i = 0; i < arr.length; i++) {
                     sum += arr[i];
-                    cy.log("Sum: " + sum)
-                }})
+                }
+                cy.log('Sum:' + sum)
+                expect(sum).to.be.equal(94)               
+            })
     }
 }
 

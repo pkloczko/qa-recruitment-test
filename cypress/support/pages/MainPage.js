@@ -20,7 +20,7 @@ class MainPage {
         cy.get(category).click()
     }
 
-    clickProductbyName(productName) {
+    clickProductByName(productName) {
         cy.get('.product-grid-item__name-link').contains(productName).click()
         return new ProductPage();
     }
